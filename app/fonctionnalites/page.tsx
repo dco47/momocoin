@@ -20,7 +20,7 @@ export default function Fonctionnalites() {
         </h2>
 
         <span className="font-bold text-black text-lg sm:text-xl lg:text-2xl block mt-2">
-          C’est simple comme bonjour !
+          C'est simple comme bonjour !
         </span>
 
         <div className="max-w-5xl mx-auto px-2 sm:px-6 lg:px-10 py-6 sm:py-10">

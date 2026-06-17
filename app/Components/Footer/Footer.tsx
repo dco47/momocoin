@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="max-w-5xl mx-auto px-4 py-8 sm:py-10">
           {/* Logo */}
           <div className="flex justify-center mb-6">
-            <Image src="/logoMOMO.png" alt="MomoCoin" width={90} height={90} />
+            <Image src="/logoMOMO.png" alt="MomoCoin" width={90} height={90} className="h-auto w-auto" />
           </div>
 
           {/* Nav links */}
@@ -46,27 +46,27 @@ export default function Footer() {
               alt="Télécharger sur l'App Store"
               width={120}
               height={40}
-              className="h-10 w-auto"
+              className="h-auto w-auto"
             />
             <Image
               src="/Gplay.png"
               alt="Disponible sur Google Play"
               width={135}
               height={40}
-              className="h-10 w-auto"
+              className="h-auto w-auto"
             />
           </div>
 
           <div className="flex flex-col sm:flex-col items-center justify-center gap-4">
             <p className="text-xs sm:text-sm text-black text-center sm:text-left">
-              &copy; {new Date().getFullYear()} 2025 MOMO COIN. Tous droits réservés.
+              &copy; {new Date().getFullYear()} MOMO COIN. Tous droits réservés.
             </p>
             <Image
               src="/sociaux.png"
               alt="Réseaux sociaux"
               width={50}
               height={28}
-              className="h-7 w-auto"
+              className="h-auto w-auto"
             />
           </div>
         </div>

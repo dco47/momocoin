@@ -7,7 +7,7 @@ import AccueilImmage from "@/public/Frame.png";
 export default function Accueil() {
   return (
     <div className="bg-(--prim) pb-10 pt-24">
-      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-10 gap-10 mt-10">
+      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-between py-4 px-6 lg:px-10 gap-10 mt-10">
         {/*infoAccueil*/}
         <div className="max-w-xl text-center lg:text-left mb-20">
           <h1 className="text-black text-4xl lg:text-5xl font-bold">
@@ -32,10 +32,14 @@ export default function Accueil() {
           <Image
             src={AccueilImmage}
             alt="Image Accueil"
-            className="w-72 lg:w-96 h-auto mt-10"
+            className="w-72 max-w-md h-auto mt-10"
+            priority={true}
+            width={500}
+            height={500}
           />
         </div>
       </div>
     </div>
   );
 }
+

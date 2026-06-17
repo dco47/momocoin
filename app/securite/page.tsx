@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import imgS from "@/public/imgSeurite.png";
-import Link from "next/link";
 
 export default function Securite() {
   return (
@@ -19,17 +18,17 @@ export default function Securite() {
 
             <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
               Chaque transaction est sécurisée avec une double vérification
-              (2FA). Et avec notre vérification d'identité (KYC), on s’assure
-              que personne d’autre ne peut utiliser ton compte.
+              (2FA). Et avec notre vérification d'identité (KYC), on s'assure
+              que personne d'autre ne peut utiliser ton compte.
             </p>
           </div>
           <div className="flex-1 flex justify-center">
             <Image
               src={imgS}
               alt="Sécurité"
-              width={500}
-              height={500}
-              className="w-full max-w-md h-auto"
+              width={400}
+              height={400}
+              className="w-auto max-w-md h-auto object-contain"
             />
           </div>
         </div>
@@ -41,7 +40,7 @@ export default function Securite() {
             Prêt à échanger ton argent en crypto
           </h2>
           <h2 className="text-2xl font-bold text-black leading-tight">
-            ou envoyer de l’argent rapidement ?
+            ou envoyer de l'argent rapidement ?
           </h2>
 
           <button
@@ -59,8 +58,9 @@ export default function Securite() {
               alt="Cercle"
               width={500}
               height={200}
+              className="w-auto max-w-md h-auto"
             />
-            
+
             {/* TELEPHONE */}
             <Image
               src="/Frame.png"

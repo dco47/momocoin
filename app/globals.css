@@ -1,16 +1,12 @@
 @import "tailwindcss";
 @import "remixicon/fonts/remixicon.css";
 
-@font-face {
-  font-family: "Aeonik";
-  src: url("/fonts/Aeonik-Regular.woff2");
-}
-
 :root {
   --prim: #feb800;
   --body: #060606;
   --white: #fff;
   --black: #000;
+  --font-aeonik: sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,16 +19,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Aeonik", Arial, Helvetica, sans-serif;
 }
 
 * {
   scroll-behavior: smooth;
-  font-family: "Aeonik", Arial, Helvetica, sans-serif;
 }
 
 .navbar-menu {
-  animation: slideDown 0.3s ease;
+  animation: slideDown 0.5s ease-in-out;
 }
 
 .fonction2 {
@@ -60,4 +54,16 @@ body {
     rgba(20, 20, 20, 1),
     rgba(81, 81, 81, 1)
   );
+}
+
+@media (min-width: 1024px) {
+  .support-graphic {
+    height: 360px;
+    max-width: 380px;
+  }
+  .support-graphic .support-overlay {
+    width: 210px;
+    height: 210px;
+    right: 1rem;
+  }
 }

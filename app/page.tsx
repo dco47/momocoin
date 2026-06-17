@@ -1,10 +1,13 @@
-import Index from "./Pages/Index/Index";
-
+import Accueil from "./accueil/page";
+import Fonctionnalites from "./fonctionnalites/page";
+import Securite from "./securite/page";
 
 export default function page() {
   return (
     <>
-      <Index />
+      <Accueil />
+      <Fonctionnalites />
+      <Securite />
     </>
   )
 }
